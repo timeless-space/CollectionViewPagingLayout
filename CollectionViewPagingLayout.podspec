@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.swift_versions = ["5.4"]
 
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "14.0"
 
   s.frameworks = "UIKit"
   s.weak_frameworks = "SwiftUI", "Combine"
