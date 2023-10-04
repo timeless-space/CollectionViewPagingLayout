@@ -82,7 +82,7 @@ public class PagingCollectionViewController<ValueType: Identifiable, PageContent
         }
         let index = currentIndex ?? layout.currentPage
         if index < list.count {
-            guard index != layout.currentPage else { return }
+            guard index != layout.currentPage || !view.isUserInteractionEnabled else { return }
             view.isUserInteractionEnabled = false
             layout.setCurrentPage(index) { [weak view] in
                 view?.isUserInteractionEnabled = true
